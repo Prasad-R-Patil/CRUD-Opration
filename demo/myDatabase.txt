@@ -1,0 +1,16 @@
+create database mydatabase;
+use mydatabase;
+-- Insert categories
+INSERT INTO category (id, name) VALUES (1, 'Electronics');
+INSERT INTO category (id, name) VALUES (2, 'Clothing');
+INSERT INTO category (id, name) VALUES (3, 'Books');
+INSERT INTO category (id, name) VALUES (4, 'Application');
+-- Insert products
+INSERT INTO product (id, name, price, category_id) VALUES (1, 'Smartphone', 299.99, 1);
+INSERT INTO product (id, name, price, category_id) VALUES (2, 'Laptop', 799.99, 1);
+INSERT INTO product (id, name, price, category_id) VALUES (3, 'T-shirt', 19.99, 2);
+INSERT INTO product (id, name, price, category_id) VALUES (4, 'Jeans', 49.99, 2);
+INSERT INTO product (id, name, price, category_id) VALUES (5, 'Novel', 9.99, 3);
+INSERT INTO product (id, name, price, category_id) VALUES (6, 'Notebook', 12.99, 3);
+SET sql_safe_updates=0;
+DELETE FROM product;
